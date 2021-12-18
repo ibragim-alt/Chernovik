@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5851ce7f80c648daae465917a9793caa" Name="Diagram1" ZoomLevel="81">
+        <EntityTypeShape EntityType="DraftModel.Agent" Width="1.5" PointX="6" PointY="11.125" />
+        <EntityTypeShape EntityType="DraftModel.AgentType" Width="1.5" PointX="3.75" PointY="12" />
+        <EntityTypeShape EntityType="DraftModel.Analyticks" Width="1.5" PointX="10.75" PointY="4.625" />
+        <EntityTypeShape EntityType="DraftModel.IDMaterials" Width="1.5" PointX="5.75" PointY="6.75" />
+        <EntityTypeShape EntityType="DraftModel.Manager" Width="1.5" PointX="13.75" PointY="12.875" />
+        <EntityTypeShape EntityType="DraftModel.Material" Width="1.5" PointX="13.25" PointY="7" />
+        <EntityTypeShape EntityType="DraftModel.MaterialCountHistory" Width="1.5" PointX="13.25" PointY="9.75" />
+        <EntityTypeShape EntityType="DraftModel.MaterialSupplier" Width="1.5" PointX="11" PointY="13.375" />
+        <EntityTypeShape EntityType="DraftModel.MaterialSupply" Width="1.5" PointX="11" PointY="7.75" />
+        <EntityTypeShape EntityType="DraftModel.MenagerSale" Width="1.5" PointX="16" PointY="13" />
+        <EntityTypeShape EntityType="DraftModel.Product" Width="1.5" PointX="3" PointY="1.875" />
+        <EntityTypeShape EntityType="DraftModel.Production" Width="1.5" PointX="5.25" PointY="2.625" />
+        <EntityTypeShape EntityType="DraftModel.ProductSale" Width="1.5" PointX="8.25" PointY="2.75" />
+        <EntityTypeShape EntityType="DraftModel.ProductType" Width="1.5" PointX="0.75" PointY="3" />
+        <EntityTypeShape EntityType="DraftModel.Staff" Width="1.5" PointX="13" PointY="1" />
+        <EntityTypeShape EntityType="DraftModel.StaffSpec" Width="1.5" PointX="10.75" PointY="2" />
+        <EntityTypeShape EntityType="DraftModel.Supplier" Width="1.5" PointX="8.75" PointY="13" />
+        <EntityTypeShape EntityType="DraftModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="10.75" />
+        <EntityTypeShape EntityType="DraftModel.TypeMaterial" Width="1.5" PointX="8.75" PointY="8.625" />
+        <EntityTypeShape EntityType="DraftModel.Workshop" Width="1.5" PointX="3" PointY="8.125" />
+        <AssociationConnector Association="DraftModel.FK_Agent_AgentType" />
+        <AssociationConnector Association="DraftModel.FK_ProductSale_Agent" />
+        <AssociationConnector Association="DraftModel.FK_Staff_Analyticks" />
+        <AssociationConnector Association="DraftModel.FK_MenagerSale_Manager" />
+        <AssociationConnector Association="DraftModel.FK_Material_MaterialSupply" />
+        <AssociationConnector Association="DraftModel.FK_MaterialCountHistory_MaterialSupply" />
+        <AssociationConnector Association="DraftModel.FK_MaterialSupplier_Supplier" />
+        <AssociationConnector Association="DraftModel.FK_MaterialSupply_TypeMaterial" />
+        <AssociationConnector Association="DraftModel.FK_Product_ProductType" />
+        <AssociationConnector Association="DraftModel.FK_Production_Product" />
+        <AssociationConnector Association="DraftModel.FK_ProductSale_Product" />
+        <AssociationConnector Association="DraftModel.FK_Production_Workshop" />
+        <AssociationConnector Association="DraftModel.FK_Staff_StaffSpec" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
